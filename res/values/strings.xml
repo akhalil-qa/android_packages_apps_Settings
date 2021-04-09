@@ -7066,6 +7066,7 @@
     <string name="help_url_network_dashboard" translatable="false"></string>
     <string name="help_url_connected_devices" translatable="false"></string>
     <string name="help_url_apps_and_notifications" translatable="false"></string>
+    <string name="help_url_apps_permissions" translatable="false"></string>
     <string name="help_url_night_display" translatable="false"></string>
     <string name="help_url_dark_theme" translatable="false"></string>
     <string name="help_url_screen_saver" translatable="false"></string>
@@ -7331,6 +7332,10 @@
     <string name="app_and_notification_dashboard_title">Apps &amp; notifications</string>
     <!-- Summary for Apps & Notification settings, explaining a few important settings under it [CHAR LIMIT=NONE]-->
     <string name="app_and_notification_dashboard_summary">Recent apps, default apps</string>
+     <!-- Title for setting tile leading to Apps Permissions settings [CHAR LIMIT=40]-->
+    <string name="app_permissions_new">Apps Permissions</string>
+    <!-- Summary for Apps & Notification settings, explaining a few important settings under it [CHAR LIMIT=NONE]-->
+    <string name="app_permission_dashboard_summary">Revoked and Granted permission list of apps</string>
     <!-- Toast shown when an app in the work profile attempts to open notification settings. The apps in the work profile cannot access notification settings. [CHAR LIMIT=NONE] -->
     <string name="notification_settings_work_profile">Notification access is not available for apps in the work profile.</string>
     <!-- Title for setting tile leading to account settings [CHAR LIMIT=40]-->
@@ -7365,10 +7370,13 @@
     <string name="keywords_app_default">Open with</string>
     <!-- Search keyword for "App info" settings [CHAR_LIMIT=NONE]-->
     <string name="keywords_applications_settings">Applications</string>
+    <string name="keywords_applications_permissions_settings">Application permissions</string>
     <!-- Search keyword for "Time zone" settings [CHAR_LIMIT=NONE]-->
     <string name="keywords_time_zone">timezone</string>
     <!-- Search keyword for "Display over other apps" settings [CHAR_LIMIT=NONE]-->
     <string name="keywords_draw_overlay">Chat head</string>
+
+    <string name="space_manager">Space Manager</string>
 
     <!-- Search keyword for "Flashlight" settings [CHAR_LIMIT=NONE]-->
     <string name="keywords_flashlight">Flashlight, Light, Torch</string>

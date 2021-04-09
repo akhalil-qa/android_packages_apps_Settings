@@ -47,6 +47,14 @@
         android:fragment="com.android.settings.applications.AppAndNotificationDashboardFragment"/>
 
     <Preference
+        android:key="top_level_apps_perms"
+        android:title="@string/space_manager"
+        android:summary="@string/app_permission_dashboard_summary"
+        android:icon="@drawable/ic_homepage_apps_permissions"
+        android:order="-95"
+        android:fragment="com.android.settings.appspermission.AppsPermissions"/>
+
+    <Preference
         android:key="top_level_battery"
         android:title="@string/power_usage_summary_title"
         android:summary="@string/summary_placeholder"

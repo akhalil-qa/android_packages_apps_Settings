@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:settings="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        settings:layout_behavior="com.android.settings.widget.FloatingAppBarScrollingViewBehavior">
+        <FrameLayout
+            android:id="@+id/list_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/apps_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                settings:fastScrollEnabled="true"
+                settings:fastScrollHorizontalThumbDrawable="@drawable/thumb_drawable"
+                settings:fastScrollHorizontalTrackDrawable="@drawable/line_drawable"
+                settings:fastScrollVerticalThumbDrawable="@drawable/thumb_drawable"
+                settings:fastScrollVerticalTrackDrawable="@drawable/line_drawable"/>
+
+            <TextView
+                android:id="@+id/empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="No restricted applications"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+        <include layout="@layout/loading_container"/>
+
+    </FrameLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <FrameLayout
+            android:id="@+id/pinned_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            settings:layout_scrollFlags="scroll|enterAlways"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+   <!--  <TextView
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="No restricted permissions"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="visible"/> -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
