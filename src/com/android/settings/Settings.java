@@ -174,7 +174,10 @@ public class Settings extends SettingsActivity {
     public static class ConnectedDeviceDashboardActivity extends SettingsActivity {}
     public static class PowerUsageSummaryActivity extends SettingsActivity { /* empty */ }
     public static class AppAndNotificationDashboardActivity extends SettingsActivity {}
-    public static class AppsPermissions extends SettingsActivity {}
+    
+    // [AHMED] add subclass for SpaceManagerRestrictions to launch independently
+    public static class SpaceManagerRestrictions extends SettingsActivity {}
+    
     public static class StorageDashboardActivity extends SettingsActivity {}
     public static class AccountDashboardActivity extends SettingsActivity {}
     public static class SystemDashboardActivity extends SettingsActivity {}

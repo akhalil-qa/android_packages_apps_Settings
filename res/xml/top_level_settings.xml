@@ -46,13 +46,14 @@
         android:order="-100"
         android:fragment="com.android.settings.applications.AppAndNotificationDashboardFragment"/>
 
+    <!-- [AHMED] Add space manager preference-->
     <Preference
-        android:key="top_level_apps_perms"
+        android:key="top_level_space_manager"
         android:title="@string/space_manager"
-        android:summary="@string/app_permission_dashboard_summary"
-        android:icon="@drawable/ic_homepage_apps_permissions"
+        android:summary="@string/space_manager_dashboard_summary"
+        android:icon="@drawable/ic_homepage_space_manager"
         android:order="-95"
-        android:fragment="com.android.settings.appspermission.AppsPermissions"/>
+        android:fragment="com.android.settings.spacemanager.SpaceManagerRestrictions"/>
 
     <Preference
         android:key="top_level_battery"

@@ -101,6 +101,7 @@
     <uses-permission android:name="android.permission.MANAGE_SCOPED_ACCESS_DIRECTORY_PERMISSIONS" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+    <!-- [AHMED] write device config permission added-->
     <uses-permission android:name="android.permission.WRITE_DEVICE_CONFIG" />
 
     <application android:label="@string/settings_label"
@@ -2979,14 +2980,15 @@
                        android:value="com.android.settings.applications.AppAndNotificationDashboardFragment"/>
         </activity>
 
+        <!-- [AHMED] declare app permissions fragment-->
         <activity
-            android:name=".Settings$AppsPermissions"
+            android:name=".Settings$SpaceManagerRestrictions"
             android:label="@string/space_manager"
-            android:icon="@drawable/ic_homepage_apps_permissions"
+            android:icon="@drawable/ic_homepage_space_manager"
             android:parentActivityName="@string/space_manager"
             android:exported="true">
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                       android:value="com.android.settings.appspermission.AppsPermissions"/>
+                       android:value="com.android.settings.spacemanager.SpaceManagerRestrictions"/>
         </activity>
 
         <activity

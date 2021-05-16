@@ -32,7 +32,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:layout_gravity="center"
-                android:text="No restricted applications"
+                android:text="No restricted permissions"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:visibility="gone"/>
 
@@ -51,16 +51,5 @@
             android:layout_height="wrap_content"
             settings:layout_scrollFlags="scroll|enterAlways"/>
     </com.google.android.material.appbar.AppBarLayout>
-
-   <!--  <TextView
-        android:id="@android:id/empty"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:text="No restricted permissions"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:visibility="visible"/> -->
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

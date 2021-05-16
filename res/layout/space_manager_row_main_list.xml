@@ -6,12 +6,6 @@
     android:layout_marginBottom="6dip"
     android:id="@+id/parent_layout">
 
-<!--    <ImageView-->
-<!--        android:id="@+id/appIcon"-->
-<!--        android:layout_width="40dp"-->
-<!--        android:layout_height="35dp"-->
-<!--        android:background="@drawable/ic_launcher_foreground"/>-->
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -20,7 +14,7 @@
         android:layout_marginEnd="5dp"
         android:orientation="horizontal">
         <ImageView
-            android:id="@+id/icon"
+            android:id="@+id/app_icon"
             android:layout_width="38dip"
             android:layout_height="38dip"
             android:layout_gravity="center"
@@ -40,7 +34,7 @@
         android:layout_marginRight="6dip">
 
         <TextView
-            android:id="@+id/AppName"
+            android:id="@+id/app_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#000"
@@ -50,12 +44,12 @@
             android:ellipsize="marquee"
             android:fadingEdge="horizontal"/>
         <TextView
-            android:id="@+id/restrictedBy"
+            android:id="@+id/restriction_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/AppName"
-            android:layout_alignStart="@+id/AppName"
-            android:layout_alignLeft="@+id/AppName"
+            android:layout_below="@+id/app_name"
+            android:layout_alignStart="@+id/app_name"
+            android:layout_alignLeft="@+id/app_name"
             android:paddingBottom="3dip"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textSize="13sp"
